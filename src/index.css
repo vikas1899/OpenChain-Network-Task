@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes bounceRight {
+    0%,
+    100% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(1px); /* Adjust the distance of bounce */
+    }
+  }
+
+  .animate-bounce-right {
+    animation: bounceRight 1700ms infinite;
+  }
+}
